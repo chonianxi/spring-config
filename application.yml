@@ -7,5 +7,5 @@ eureka:
 logging:
   level:
     ROOT: INFO
-    com.netflix.eureka.registry.AbstractInstanceRegistry: WARN
-    com.netflix.discovery.DiscoveryClient: WARN      
+#    com.netflix.eureka.registry.AbstractInstanceRegistry: WARN
+#    com.netflix.discovery.DiscoveryClient: WARN      
