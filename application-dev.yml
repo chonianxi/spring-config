@@ -1,0 +1,26 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:18761/eureka/
+spring:
+  rabbitmq:
+    host: ${rabbitmq.server.hostname:rabbitmq.ms.com}
+  # 端口
+    port: ${rabbitmq.server.port:5672}
+  # 用户名
+    username: admin
+  # 密码
+    password: admin
+  # 配置虚拟机
+    virtual-host: /
+  # 消息开启手动确认
+    listener:
+      direct:
+        acknowledge-mode: manual
+      
+      
+logging:
+  level:
+    ROOT: INFO
+#    com.netflix.eureka.registry.AbstractInstanceRegistry: WARN
+#    com.netflix.discovery.DiscoveryClient: WARN     
